@@ -120,13 +120,15 @@ if __name__ == '__main__':
     """
     main
     """
+    # 请输入信息，username和password是校园网的账号密码，prov、city、region、addr是填表时的省、市、区、地址信息。
+    # data里为空会报错
     data = {
-        'username': '219025200034',
-        'password': '',
-        'prov': '北京市',
-        'city': '市辖区',
-        'region': '海淀区',
-        'addr': '西二旗西路领秀新硅谷D区55号楼2单元102'}
+        'username': 'xxx',
+        'password': 'xxx',
+        'prov': 'xxx',
+        'city': 'xxx',
+        'region': 'xxx',
+        'addr': 'xxx'}
 
     logger = log_set()
     logger.info('start')
