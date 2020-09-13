@@ -7,6 +7,10 @@
 
 实现 西南财经大学-swufe移动校园2.0-学生每日校外打卡 脚本。
 
+- 自动打卡
+- 可指定时间执行打卡
+- 有日志记录
+
 为了保障同学的账号密码隐私，请自行输入账号密码并运行程序（当然你愿意托管给我也ok）。
 
 校友路过求个star呗~ 比心~
@@ -20,6 +24,7 @@
 ```python
 pip install selenium
 pip install logging
+pip install apscheduler
 ```
 
 ### chromedriver驱动
@@ -46,13 +51,20 @@ chromedriver的版本需要与Chrome的版本一致。
 
 2. 每日运行 auto_check.py 。
 
-## TO DO
+## 文件说明
 
-定时任务：
+| 文件名             | 作用     | 使用方法                 |
+| ------------------ | -------- | ------------------------ |
+| auto_check.py      | 自动打卡 | 每日运行一次（可关机）   |
+| auto_check_cron.py | 自动打卡 | 只需运行一次（不能关机） |
 
-1. 最推荐的一种实现方式是，在linux上创建定时任务。方式：crontab -e
-2. python schedulers模块
-3. python APScheduler框架
+## 定时任务
+
+1. 最推荐的一种实现方式是，在linux上创建定时任务，运行auto_check.py。方式：crontab -e
+
+2. 运行auto_check_cron.py。需保证你的电脑一直不关机，即可每日自动打卡。
+
+    
 
 
 
