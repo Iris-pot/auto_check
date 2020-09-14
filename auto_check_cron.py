@@ -146,5 +146,6 @@ if __name__ == '__main__':
     print('start')
     scheduler = BlockingScheduler()
     # scheduler.add_job(auto_check, 'interval', seconds=2, id='auto')
-    scheduler.add_job(auto_check, 'cron', hour='0', minute='46', id='auto')
+    # 此处指定时间执行打卡
+    scheduler.add_job(auto_check, 'cron', hour='14', minute='03', id='auto')
     scheduler.start()

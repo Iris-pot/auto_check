@@ -60,7 +60,7 @@ chromedriver的版本需要与Chrome的版本一致。
 
 ## 定时任务
 
-1. 最推荐的一种实现方式是，在linux上创建定时任务，运行auto_check.py。方式：crontab -e
+1. 最推荐的一种实现方式是，在linux上创建定时任务，运行auto_check.py。方式：crontab -e。但是配置环境太麻烦了~
 
 2. 运行auto_check_cron.py。需保证你的电脑一直不关机，即可每日自动打卡。
 
