@@ -58,13 +58,15 @@ chromedriver的版本需要与Chrome的版本一致。
 | auto_check.py      | 自动打卡 | 每日运行一次（可关机）   |
 | auto_check_cron.py | 自动打卡 | 只需运行一次（不能关机） |
 
-## 定时任务
+## 定时任务执行方式
 
-1. 最推荐的一种实现方式是，在linux上创建定时任务，运行auto_check.py。方式：crontab -e。但是配置环境太麻烦了~
+1. 最推荐的一种实现方式是，腾讯云函数！待我调试好了会更新。
 
-2. 运行auto_check_cron.py。需保证你的电脑一直不关机，即可每日自动打卡。
+2. 在linux上创建定时任务，运行auto_check.py。方式：crontab -e。但是配置环境太麻烦了~
 
-    
+3. 运行auto_check_cron.py。需保证你的电脑一直不关机，即可每日自动打卡。
+
+     
 
 
 

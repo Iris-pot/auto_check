@@ -119,6 +119,9 @@ def file_table(logger, driver, data):
 
 
 def auto_check():
+    """
+    auto check function 
+    """
     # 请输入信息，username和password是校园网的账号密码，prov、city、region、addr是填表时的省、市、区、地址信息。
     # data里为空会报错
     data = {
